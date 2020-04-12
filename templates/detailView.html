@@ -1,0 +1,187 @@
+{% extends 'layout.html' %}
+
+{% block title %}Result Page{% endblock %}
+
+{% block content %}
+<div class="wrapper mx-auto mb-10">
+	<h3>Personality</h3>
+	<canvas id="personalityChart" width="950" height="400"></canvas>
+	<p>
+		<button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapsePersonality"
+			aria-expanded="false" aria-controls="collapsePersonality">
+			What does this mean?
+		</button>
+	</p>
+	<div class="collapse" id="collapsePersonality">
+		<div class="card card-body" id="cardPersonality">
+			Big Five personality characteristics represent the most widely used model for generally describing how a person engages with the world. The model includes five primary dimensions:
+
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Need</th>
+						<th scope="col">Individuals who score high...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<th scope="row">1</th>
+						<td>Agreeableness</td>
+						<td>A person's tendency to be compassionate and cooperative toward others.</td>
+					</tr>
+					<tr>
+					<th scope="row">2</th>
+						<td>Conscientiousness</td>
+						<td>A person's tendency to act in an organized or thoughtful way.</td>
+					</tr>
+					<th scope="row">3</th>
+						<td>Extraversion</td>
+						<td>A person's tendency to seek stimulation in the company of others.</td>
+					</tr>
+					<th scope="row">4</th>
+						<td>Emotional range</td>
+						<td>Is the extent to which a person's emotions are sensitive to the person's environment.</td>
+					</tr>
+					<th scope="row">5</th>
+						<td>Openness</td>
+						<td>Is the extent to which a person is open to experiencing different activities.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="wrapper mx-auto mt-10">
+	<h3>Needs</h3>
+	<canvas id="needsChart" width="950" height="400"></canvas>
+	<p>
+		<button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseNeeds"
+			aria-expanded="false" aria-controls="collapseNeeds">
+			What does this mean?
+		</button>
+	</p>
+	<div class="collapse" id="collapseNeeds">
+		<div class="card card-body" id="cardNeeds">
+			Needs describe at a high level those aspects of a product that are likely to resonate with the author of the input text. The following table describes the twelve needs that the service evaluates.
+			<br>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Need</th>
+						<th scope="col">Individuals who score high...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<th scope="row">1</th>
+						<td>Excitement</td>
+						<td>Want to get out there and live life, have upbeat emotions, and want to have fun.</td>
+					</tr>
+					<tr>
+					<th scope="row">2</th>
+						<td>Harmony</td>
+						<td>Appreciate other people, their viewpoints, and their feelings.
+						</td>
+					</tr>
+					<th scope="row">3</th>
+						<td>Curiosity</td>
+						<td>Have a desire to discover, find out, and grow.</td>
+					</tr>
+					<th scope="row">4</th>
+						<td>Ideal</td>
+						<td>Desire perfection and a sense of community.</td>
+					</tr>
+					<th scope="row">5</th>
+						<td>Closeness</td>
+						<td>Relish being connected to family and setting up a home.</td>
+					</tr>
+					<th scope="row">6</th>
+						<td>Self-expression	</td>
+						<td>Enjoy discovering and asserting their own identities.</td>
+					</tr>
+					<th scope="row">7</th>
+						<td>Liberty</td>
+						<td>Have a desire for fashion and new things, as well as the need for escape.</td>
+					</tr>
+					<th scope="row">8</th>
+						<td>Love</td>
+						<td>Enjoy social contact, whether one-to-one or one-to-many. Any brand that is involved in bringing people together taps this need.</td>
+					</tr>
+					<th scope="row">9</th>
+						<td>Practicality</td>
+						<td>Have a desire to get the job done, a desire for skill and efficiency, which can include physical expression and experience.</td>
+					</tr>
+					<th scope="row">10</th>
+						<td>Stability</td>
+						<td>Seek equivalence in the physical world. They favor the sensible, the tried and tested.</td>
+					</tr>
+					<th scope="row">11</th>
+						<td>Challenge</td>
+						<td>Have an urge to achieve, to succeed, and to take on challenges.</td>
+					</tr>
+					<th scope="row">12</th>
+						<td>Structure</td>
+						<td>Exhibit groundedness and a desire to hold things together. They need things to be well organized and under control.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="wrapper mx-auto mt-10">
+	<h3>Values</h3>
+	<canvas id="valuesChart" width="950" height="400"></canvas>
+	<p>
+		<button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseValues"
+			aria-expanded="false" aria-controls="collapseValues">
+			What does this mean?
+		</button>
+	</p>
+	<div class="collapse" id="collapseValues">
+		<div class="card card-body cardValues">
+			Values describe motivating factors that influence the author's decision-making. The following table describes the five values that the service infers.
+
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Need</th>
+						<th scope="col">Individuals who score high...</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<th scope="row">1</th>
+						<td>Self-transcendence / Helping others</td>
+						<td>Show concern for the welfare and interests of others.</td>
+					</tr>
+					<tr>
+					<th scope="row">2</th>
+						<td>Conservation / Tradition</td>
+						<td>Emphasize self-restriction, order, and resistance to change.</td>
+					</tr>
+					<th scope="row">3</th>
+						<td>Hedonism / Taking pleasure in life</td>
+						<td>Seek pleasure and sensuous gratification for themselves.</td>
+					</tr>
+					<th scope="row">4</th>
+						<td>Self-enhancement / Achieving success</td>
+						<td>Seek personal success for themselves.</td>
+					</tr>
+					<th scope="row">5</th>
+						<td>Open to change / Excitement</td>
+						<td>Emphasize independent action, thought, and feeling, as well as a readiness for new experiences.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+<script defer src="../static/js/detail.js"></script>
+{% endblock %}

@@ -1,0 +1,80 @@
+#watsonLogo {
+	height: 60px;
+}
+
+#navbarTitle {
+	margin-left: 20px;
+	color: #1d1d1d;
+}
+
+.mainView {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px 0px 130px 0px;
+}
+
+textarea {
+	border-radius: 10px;
+    height: 400px;
+    width: 500px;
+	border-color: #03b1e0;
+	padding: 10px;
+}
+	textarea:hover {
+		box-shadow: 0px 4px 13px 0 #64cff761;
+	}
+
+	textarea:focus {
+		box-shadow: 0px 4px 13px 0 #64cff761;
+	}
+
+	textarea:active {
+		box-shadow: 0px 4px 13px 0 #64cff761;
+		outline: 0;
+	}
+
+#getResultBtn:hover {
+	box-shadow: 0px 4px 13px 0 #64cff761;
+}
+
+#getResultBtn:focus {
+	box-shadow: 0px 4px 13px 0 #64cff761;
+}
+
+#getResultBtn:active {
+	transform: scale(0.9);
+}
+
+.activityIndicator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	.spinnner {
+		z-index: 2;
+		transform: scale(0.7);
+	}
+
+
+/* Detail View */
+.wrapper {
+	margin-top: 50px;
+	width: 90%;
+	height: 30%;
+	/* margin: 10px 0 30px 0 */
+}
+
+/* #cardPersonality {
+	margin-bottom: 20px;
+}
+
+#cardNeeds {
+	margin-bottom: 20px;
+}
+
+#cardValues {
+	margin-bottom: 20px;
+} */
+
+/* Detail View end */

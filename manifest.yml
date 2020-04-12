@@ -1,0 +1,7 @@
+---
+applications:
+- path: .
+  memory: 300M
+  instances: 1
+  name: PersonalityInsightsWeb
+  command: python -m flask run

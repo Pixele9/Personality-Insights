@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href= "{{ url_for('static',filename='styles/main.css') }}">
+	<link rel="stylesheet" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+	<nav class="navbar navbar-dark" style="background-color: #e3f2fd;">
+		<a class="navbar-brand" href="/" id="navbarTitle"><img src="https://upload.wikimedia.org/wikipedia/en/0/00/IBM_Watson_Logo_2017.png" alt="IBM Watson Logo" id="watsonLogo">		Watson Personality Insights</a>
+		<a href="http://andres-leal.com" class="mr-lg-2" target="_blank">Developed by Andrés Leal 🤘</a>
+	</nav>
+	
+	<div class="mainView">
+		<div class="container">
+			<div class="row">
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../static/js/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	{% block scripts %}{% endblock %}
+</body>
+</html>
