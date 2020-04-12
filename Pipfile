@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 flask = "*"
 ibm-watson = "*"
+guinicorn = "*"
 
 [requires]
 python_version = "3.6"

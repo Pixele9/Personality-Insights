@@ -6,9 +6,6 @@ import json
 
 app = Flask(__name__, template_folder="./templates")
 
-if _name_ == "_main_":
-	port = int(os.getenv("PORT", 8080))
-	app.run(host='0.0.0.0', port=port)
 
 # make this POST method to accept the text
 @app.route("/")
