@@ -4,6 +4,8 @@ from ibm_watson import PersonalityInsightsV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 import json
 
+import credentials
+
 app = Flask(__name__, template_folder="./templates")
 
 
@@ -18,8 +20,8 @@ def hello_world():
 def analyze():
 	text = request.form["textToAnalyze"]
 
-	apiKey = ""
-	url = ""
+	apiKey = APIKEY
+	url = URL
 
 	authenticator = IAMAuthenticator(apiKey)
 	service = PersonalityInsightsV3(

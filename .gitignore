@@ -77,4 +77,4 @@ $RECYCLE.BIN/
 *.vscode
 
 # Igrone credentials txt file
-credentials.txt
+credentials.py
