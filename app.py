@@ -18,8 +18,8 @@ def hello_world():
 def analyze():
 	text = request.form["textToAnalyze"]
 
-	apiKey = "TaRGRZEHYoWYm_D5Rc3dbUZ__wtf-BemTXCgoQrDNX-9"
-	url = "https://api.eu-gb.personality-insights.watson.cloud.ibm.com/instances/fb2ea819-bd93-48c7-858f-f75e32439355"
+	apiKey = ""
+	url = ""
 
 	authenticator = IAMAuthenticator(apiKey)
 	service = PersonalityInsightsV3(
